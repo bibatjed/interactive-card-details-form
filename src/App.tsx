@@ -1,9 +1,14 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
+import CardBack from "./components/CardBack";
+import CardFront from "./components/CardFront";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="main">
+      <CardBack />
+      <CardFront />
+    </div>
+  );
 }
 
 export default App;

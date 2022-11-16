@@ -1,0 +1,44 @@
+@import '../../index.scss';
+.cardfront {
+    width: 70%;
+    position: relative;
+    margin-top: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    & > img {
+        width: 100%;
+    }
+
+    &__logo {
+        width: 50px;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        color: $white;
+        left: 10%;
+        bottom: 35%;
+        font-size: 18px;
+    }
+    &__name {
+        position: absolute;
+        color: $white;
+        bottom: 15%;
+        left: 5%;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
+    &__expiry-date{
+        position: absolute;
+        color: $white;
+        font-size: 11px;
+        bottom: 15%;
+        right: 5%;
+    }
+}
