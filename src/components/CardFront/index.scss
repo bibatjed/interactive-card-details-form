@@ -1,8 +1,9 @@
 @import '../../index.scss';
 .cardfront {
     width: 70%;
+    margin-top: -18%;
     position: relative;
-    margin-top: 20px;
+    margin-left: 7%;
     font-family: 'Space Grotesk', sans-serif;
     & > img {
         width: 100%;

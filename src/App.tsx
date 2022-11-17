@@ -6,13 +6,17 @@ import { CreditContext } from "./context/credit.context";
 
 function App() {
   return (
-    <div className="main">
-      <CreditContext>
-        <CardBack />
-        <CardFront />
-        <CreditCardForm />
-      </CreditContext>
-    </div>
+    <CreditContext>
+      <div className="wrapper">
+        <div className="main">
+          <CardBack />
+          <CardFront />
+        </div>
+        <div className="main2">
+          <CreditCardForm />
+        </div>
+      </div>
+    </CreditContext>
   );
 }
 

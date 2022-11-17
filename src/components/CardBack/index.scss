@@ -2,8 +2,9 @@
 .cardback {
     width: 70%;
     position: relative;
-    margin-top: 20px;
-    
+    align-self: flex-end;
+    margin-top: 5%;
+    margin-right: 20px;
     & > img {
         width: 100%;
     }

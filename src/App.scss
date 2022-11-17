@@ -1,7 +1,17 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    align-items: stretch;
+}
 .main {
     background-image: url('./images/bg-main-mobile.png');
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    padding: .5px;
+    background-size: cover;
+    background-position: left top;
+    background-size: 100% 85%;
+    display: flex;
+    flex-direction: column;
 }
