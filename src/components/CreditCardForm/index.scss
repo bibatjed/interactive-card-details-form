@@ -1,0 +1,104 @@
+@import '../../index.scss';
+.creditcard {
+    font-family: 'Space Grotesk', sans-serif;
+    color: $very-dark-violet;
+    text-transform: uppercase;
+    height: 100%;
+    &__wrapper {
+        padding: 20px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        & > form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+            justify-content: center;
+        }
+        &__name {
+            display: block;
+        }
+
+        &__name--input {
+            border: 1px solid $light-grayish-violet;
+            padding: 10px;
+            border-radius: 9px;
+        }
+
+
+        &__number--input {
+            padding: 10px;
+            border: 1px solid $light-grayish-violet;
+            border-radius: 9px;
+        }
+
+        &__date-cvc {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__label {
+                display: flex;
+                gap: 20px;
+                font-size: 13px;
+            }
+            &__input {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                &__MM {
+                    width: 15%;
+                    padding: 10px;
+                    border: 1px solid $light-grayish-violet;
+                    border-radius: 9px;
+                }
+                &__YY {
+                    width: 15%;
+                    padding: 10px;
+                    border: 1px solid $light-grayish-violet;
+                    border-radius: 9px;
+                }
+                &__CVC {
+                    width: 60%;
+                    padding: 10px;
+                    border: 1px solid $light-grayish-violet;
+                    border-radius: 9px;
+                }
+
+            }
+
+            &__error {
+                display: flex;
+                gap: 3px;
+            }
+        }
+
+        &__submit {
+            justify-self: flex-end;
+            background-color: $very-dark-violet;
+            border: 1px solid $very-dark-violet;
+            padding: 15px;
+            color: $white;
+            border-radius: 9px;
+            margin-top: 15px;
+            // text-align: center;
+        }
+    }
+}
+
+::placeholder { 
+    color: $light-grayish-violet;
+}
+input, button { 
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+span {
+    text-transform: none;
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+}
+
+.error {
+    border: 1px solid hsl(0, 100%, 66%);
+}

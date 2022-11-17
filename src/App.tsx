@@ -12,9 +12,7 @@ function App() {
           <CardBack />
           <CardFront />
         </div>
-        <div className="main2">
-          <CreditCardForm />
-        </div>
+        <CreditCardForm />
       </div>
     </CreditContext>
   );

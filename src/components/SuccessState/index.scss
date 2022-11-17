@@ -1,0 +1,17 @@
+@import '../../index.scss';
+.success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    & > h1 {
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: $very-dark-violet;
+    }
+    & > p {
+        text-transform: none;
+        color: $dark-grayish-violet;
+    }
+}

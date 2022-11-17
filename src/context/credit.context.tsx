@@ -5,7 +5,7 @@ const initialState = {
   cardNumber: "",
   cardMM: "",
   cardYY: "",
-  CVC: "",
+  cardCVC: "",
 };
 
 interface CreditCardMethod extends CreditCardInformation {
@@ -19,7 +19,7 @@ type CreditCardInformation = {
   cardNumber: string;
   cardMM: string;
   cardYY: string;
-  CVC: string;
+  cardCVC: string;
 };
 export function CreditContext({ children }: { children: ReactNode }) {
   const [value, setValue] = useState<CreditCardInformation>(initialState);
