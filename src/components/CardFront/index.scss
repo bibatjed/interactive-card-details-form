@@ -43,3 +43,26 @@
         right: 5%;
     }
 }
+
+
+@media (min-width: 1920px) {
+    .cardfront {
+        width: 50%;
+        margin-top: 0;
+        margin-left: 20%;
+
+        &__logo {
+            width: 100px;
+        }
+        &__number {
+            font-size: 30px;
+        }
+
+        &__name {
+            font-size: 15px;
+        }
+        &__expiry-date {
+            font-size: 15px;
+        }
+    }
+}
